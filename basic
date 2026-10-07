@@ -1,0 +1,523 @@
+Even / Odd
+using System;
+class Program {
+static void Main() {
+int n = 10;
+if (n % 2 == 0) Console.WriteLine("Even");
+else Console.WriteLine("Odd");
+}
+}
+2. Positive / Negative / Zero
+using System;
+class Program {
+static void Main() {
+int n = -5;
+if (n > 0) Console.WriteLine("Positive");
+else if (n < 0) Console.WriteLine("Negative");
+else Console.WriteLine("Zero");
+}
+}
+3. Largest of Two Numbers
+using System;
+class Program {
+static void Main() {
+int a = 10, b = 20;
+Console.WriteLine(a > b ? a : b);
+}
+}
+4. Largest of Three Numbers
+using System;
+class Program {
+static void Main() {
+int a = 10, b = 25, c = 15;
+if (a > b && a > c) Console.WriteLine(a);
+else if (b > c) Console.WriteLine(b);
+else Console.WriteLine(c);
+}
+}
+5. Area & Perimeter of Square
+using System;
+class Program {
+static void Main() {
+int side = 5;
+int area = side * side;
+int perimeter = 4 * side;
+Console.WriteLine("Area = " + area);
+Console.WriteLine("Perimeter = " + perimeter);
+}
+}
+6. Area & Perimeter of Rectangle
+using System;
+class Program {
+static void Main() {
+int length = 10, breadth = 5;
+int area = length * breadth; int perimeter = 2 * (length + breadth);
+Console.WriteLine("Area = " + area);
+Console.WriteLine("Perimeter = " + perimeter);
+}
+}
+7. Area of Circle
+using System;
+class Program {
+static void Main() {
+double r = 5;
+double area = Math.PI * r * r;
+Console.WriteLine("Area = " + area);
+}
+} 8. Simple Interest
+using System;
+class Program {
+static void Main() {
+double p = 1000, r = 5, t = 2;
+double si = (p * r * t) / 100;
+Console.WriteLine("Simple Interest = " + si);
+}
+}
+9. Factorial
+using System;
+class Program {
+static void Main() {
+int n = 5, fact = 1;
+for (int i = 1; i <= n; i++) fact *= i;
+Console.WriteLine(fact);
+}
+}
+10. Prime Number
+using System;
+class Program {
+static void Main() {
+int n = 7, count = 0;
+for (int i = 1; i <= n; i++)
+if (n % i == 0) count++;
+Console.WriteLine(count == 2 ? "Prime" : "Not Prime");
+}
+}
+11. Palindrome Number
+using System;
+class Program {
+static void Main() {
+int n = 121, temp = n, rev = 0;
+while (n > 0) {
+rev = rev * 10 + n % 10;
+n /= 10;
+}
+Console.WriteLine(temp == rev ? "Palindrome" : "Not Palindrome");
+}
+}
+12. Armstrong Number
+using System;
+class Program {
+static void Main() {
+int n = 153, temp = n, sum = 0;
+while (n > 0) {
+int r = n % 10;
+sum += r * r * r;
+n /= 10;
+}
+Console.WriteLine(sum == temp ? "Armstrong Number" : "Not Armstrong Number");
+}
+}
+13. Reverse a Number using System;
+class Program {
+static void Main() {
+int n = 123, rev = 0;
+while (n > 0) {
+rev = rev * 10 + n % 10;
+n /= 10;
+}
+Console.WriteLine(rev);
+}
+}
+14. Sum of Digits
+using System;
+class Program {
+static void Main() {
+int n = 123, sum = 0;
+while (n > 0) {
+sum += n % 10;
+n /= 10;
+}
+Console.WriteLine(sum);
+}
+} 15. Fibonacci Series
+using System;
+class Program {
+static void Main() {
+int a = 0, b = 1;
+for (int i = 1; i <= 10; i++) {
+Console.Write(a + " ");
+int c = a + b;
+a = b;
+b = c;
+}
+}
+}
+16. Swap Two Numbers
+using System;
+class Program {
+static void Main() {
+int a = 10, b = 20;
+int temp = a;
+a = b;
+b = temp;
+Console.WriteLine(a + " " + b);
+}
+}
+17. Leap Year
+using System;
+class Program {
+static void Main() {
+int year = 2024;
+Console.WriteLine(year % 400 == 0 || year % 4 == 0 && year % 100 != 0
+? "Leap Year" : "Not Leap Year");
+}
+}
+18. Multiplication Table
+using System;
+class Program {
+static void Main() {
+int n = 5;
+for (int i = 1; i <= 10; i++)
+Console.WriteLine(n + " x " + i + " = " + n * i);
+}
+}
+19. Calculator using switch
+using System;
+class Program {
+static void Main() {
+double a = 10, b = 5;
+char op = '+';
+switch (op) {
+case '+': Console.WriteLine(a + b); break;
+case '-': Console.WriteLine(a - b); break;
+case '*': Console.WriteLine(a * b); break;
+case '/': Console.WriteLine(a / b); break;
+}
+}
+} 20. Vowel or Consonant
+using System;
+class Program {
+static void Main() {
+char c = 'a';
+if ("aeiouAEIOU".Contains(c))
+Console.WriteLine("Vowel");
+else
+Console.WriteLine("Consonant");
+}
+}
+21. Count Digits
+using System;
+class Program {
+static void Main() {
+int n = 12345, count = 0;
+while (n > 0) {
+count++;
+n /= 10;
+}
+Console.WriteLine(count);
+
+
+
+.
+
+1. Hello World
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello World");
+    }
+}
+
+2. Take Input
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string name = Console.ReadLine();
+        Console.WriteLine("Hello " + name);
+    }
+}
+
+3. Add Two Numbers
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = Convert.ToInt32(Console.ReadLine());
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(a + b);
+    }
+}
+
+4. Subtract Two Numbers
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = Convert.ToInt32(Console.ReadLine());
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(a - b);
+    }
+}
+
+5. Multiply Two Numbers
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = Convert.ToInt32(Console.ReadLine());
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(a * b);
+    }
+}
+
+6. Divide Two Numbers
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double a = Convert.ToDouble(Console.ReadLine());
+        double b = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine(a / b);
+    }
+}
+
+7. Square – Area & Perimeter
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int s = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Area = " + s * s);
+        Console.WriteLine("Perimeter = " + 4 * s);
+    }
+}
+
+8. Rectangle – Area & Perimeter
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int l = Convert.ToInt32(Console.ReadLine());
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Area = " + l * b);
+        Console.WriteLine("Perimeter = " + 2 * (l + b));
+    }
+}
+
+9. Simple Interest
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double p = Convert.ToDouble(Console.ReadLine());
+        double r = Convert.ToDouble(Console.ReadLine());
+        double t = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine((p * r * t) / 100);
+    }
+}
+
+10. Average
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = Convert.ToInt32(Console.ReadLine());
+        int b = Convert.ToInt32(Console.ReadLine());
+        int c = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine((a + b + c) / 3.0);
+    }
+}
+
+11. Swap Two Numbers
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 10, b = 20, t;
+        t = a;
+        a = b;
+        b = t;
+        Console.WriteLine(a + " " + b);
+    }
+}
+
+12. Even or Odd
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(n % 2 == 0 ? "Even" : "Odd");
+    }
+}
+
+13. Positive / Negative
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        if (n > 0)
+            Console.WriteLine("Positive");
+        else if (n < 0)
+            Console.WriteLine("Negative");
+        else
+            Console.WriteLine("Zero");
+    }
+}
+
+14. Largest of Two
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = Convert.ToInt32(Console.ReadLine());
+        int b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(a > b ? a : b);
+    }
+}
+
+15. Vowel or Consonant
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        char c = Convert.ToChar(Console.ReadLine());
+        Console.WriteLine("aeiouAEIOU".Contains(c) ? "Vowel" : "Consonant");
+    }
+}
+
+16. Print 1 to N
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= n; i++)
+            Console.WriteLine(i);
+    }
+}
+
+17. Sum of First N Natural Numbers
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = Convert.ToInt32(Console.ReadLine()), sum = 0;
+
+        for (int i = 1; i <= n; i++)
+            sum += i;
+
+        Console.WriteLine(sum);
+    }
+}
+
+18. Multiplication Table
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= 10; i++)
+            Console.WriteLine(n + " x " + i + " = " + n * i);
+    }
+}
+
+19. Factorial
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = Convert.ToInt32(Console.ReadLine()), f = 1;
+
+        for (int i = 1; i <= n; i++)
+            f *= i;
+
+        Console.WriteLine(f);
+    }
+}
+
+20. Armstrong
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = Convert.ToInt32(Console.ReadLine());
+        int t = n, sum = 0;
+
+        while (n > 0)
+        {
+            int r = n % 10;
+            sum += r * r * r;
+            n /= 10;
+        }
+
+        Console.WriteLine(sum == t ? "Armstrong" : "Not Armstrong");
+    }
+}
+
